@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>com.czh.cloud.root</groupId>
+        <artifactId>root-server</artifactId>
+        <version>1.0.0</version>
+        <relativePath>../root-server/pom.xml</relativePath>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.czh.cloud.sybyl</groupId>
+    <artifactId>cloud-sybyl</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0.0</version>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.mahout</groupId>
+            <artifactId>mahout-core</artifactId>
+            <version>0.9</version>
+            <scope>compile</scope>
+        </dependency>
+    </dependencies>
+
+    <modules>
+        <module>server</module>
+        <module>common</module>
+        <module>outer</module>
+    </modules>
+</project>
