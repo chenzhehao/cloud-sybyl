@@ -20,7 +20,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableSwagger2
 @MapperScan("com.czh.cloud.sybyl.server.mapper")
 @EnableDiscoveryClient
-public class App {
+public class BootOfSybyl {
     public static void main(String[] args) {
         String os = System.getProperty("os.name").toLowerCase();
         if (os.contains("windows")) {
@@ -30,7 +30,7 @@ public class App {
         }
         System.setProperty("context.name", "cloud-sybyl-server");
 
-        SpringApplication.run(App.class, args);
+        SpringApplication.run(BootOfSybyl.class, args);
     }
 
     /**
